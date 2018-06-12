@@ -1,3 +1,6 @@
+<%@ taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix ="spring" uri="http://www.springframework.org/tags" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,12 +14,12 @@
     <title>Landing Page - Start Bootstrap Theme</title>
 <style type="text/css">
 
-body, html {
+.myImg {
     height: 100%;
     margin: 0;
 
     /* The image used */
-    background-image: url("/resources/bg-masthead.jpg");
+    background-image: url("<spring:url value="/resources/midas.jpg/"/>");
 
     /* Full height */
     height: 100%; 
@@ -33,8 +36,8 @@ body, html {
 </script>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- <!-- <link href="resources/landing-page.css" rel="stylesheet">
-  <link href="resources/landing-page.min.css" rel="stylesheet"> -->
+ <link href="resources/landing-page.css" rel="stylesheet">
+  <link href="resources/landing-page.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
@@ -45,28 +48,26 @@ body, html {
  -->
   </head>
 
-  <body>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="navbar-brand" href="#">Midas Touche</a>
         <a class="btn btn-primary" href="#">Sign In</a>
       </div>
     </nav>
-<div class="item ">
-<img  class="img-rounded" class="img-responsive center-block" src="/resources/bg-masthead.jpg/" style="width:100%">
 
-
-</div>
     <!-- Masthead -->
+<div class="myImg">
     <header class="masthead text-white text-center">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
+            <h1 class="mb-5">Get your own personalized Doctor and carry it along with yourself!</h1>
           </div>
+
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <form>
               <div class="form-row">
@@ -82,7 +83,8 @@ body, html {
         </div>
       </div>
     </header>
-
+ 
+</div>
    
 
 

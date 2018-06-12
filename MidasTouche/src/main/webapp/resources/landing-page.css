@@ -12,10 +12,10 @@ h6 {
   font-weight: 700;
 }
 
-header.masthead {
+header.masthead{
   position: relative;
   background-color: #343a40;
-  background: url("/resources/bg-masthead.jpg") no-repeat center center;
+  background: url("/resources/midas.jpg/") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -101,7 +101,7 @@ header.masthead h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("/resources/bg-masthead.jpg") no-repeat center center;
+  background: url("<spring:url value="/resources/bg-masthead.jpg/">") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
