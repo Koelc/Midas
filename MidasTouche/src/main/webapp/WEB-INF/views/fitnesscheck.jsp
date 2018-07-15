@@ -11,35 +11,35 @@
 <div class="col-md-4" >
     <select class="company">
           <option value=''><strong>Name</strong></option>
-          <option value="Company A">Company A</option>
-          <option value="Company B">Company B</option>
+          <option value="RO5">RO5</option>
+          <option value="RO1">RO1</option>
     </select>
 </div>
 <div class="col-md-4" >
-    <select class="product">
-          <option value=''><strong>Products</strong></option>
+    <select class="Centre">
+          <option value=''><strong>Centre</strong></option>
     </select>
 </div>
 
 <script>
 var series = [
-	{name: 'Company A', product: 'A1'},
-	{name: 'Company A', product: 'A2'},
-	{name: 'Company A', product: 'A3'},
-	{name: 'Company B', product: 'B1'},
-	{name: 'Company B', product: 'B2'}
+	{region: 'RO5', Centre: 'CST'},
+	{region: 'RO5', Centre: 'GWH'},
+	{region: 'RO1', Centre: 'PV'},
+	{region: 'RO1', Centre: 'CP'},
+	{region: 'RO1', Centre: 'SE'}
 	]
 
 	$(".company").change(function(){
 		var company = $(this).val();
-		var options =  '<option value=""><strong>Products</strong></option>';
+		var options =  '<option value=""><strong>Centre</strong></option>';
 		$(series).each(function(index, value){
-			if(value.name == company){
-				options += '<option value="'+value.product+'">'+value.product+'</option>';
+			if(value.region == company){
+				options += '<option value="'+value.Centre+'">'+value.Centre+'</option>';
 			}
 		});
 		
-		$('.product').html(options);
+		$('.Centre').html(options);
 	});
 
 
