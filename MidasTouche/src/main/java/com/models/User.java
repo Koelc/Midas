@@ -13,10 +13,8 @@ public class User implements Serializable
 		private static final long serialVersionUID = 1L;
 		
 		@Id
-		@GeneratedValue
-		int uid;
-		String uname;
 		String email;
+		String uname;
 		String password;
 		public String getPassword() {
 			return password;
@@ -24,12 +22,7 @@ public class User implements Serializable
 		public void setPassword(String password) {
 			this.password = password;
 		}
-		public int getUid() {
-			return uid;
-		}
-		public void setUid(int uid) {
-			this.uid = uid;
-		}
+	
 		public String getUname() {
 			return uname;
 		}

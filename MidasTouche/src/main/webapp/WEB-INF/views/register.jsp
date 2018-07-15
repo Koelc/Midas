@@ -34,7 +34,7 @@
  <h1>Registration Form</h1>
  <div class="col-lg-12">
   <div class="row">
-  <form:form modelAttribute="user" action="saveRegister" method="post">
+  <form:form modelAttribute="User" action="saveRegister" method="post">
      <div class="col-lg-12">
           <div class="form-group">
     <form:errors path="email" cssClass="err"/><br>
@@ -43,10 +43,10 @@
      <form:input path="email" placeholder="Enter Mail Id.." class="form-control"/>
      </div>
          <div class="form-group">
-    <form:errors path="name" cssClass="err"/><br>
+    <form:errors path="uname" cssClass="err"/><br>
      <label>Name:</label>
      <br>
-     <form:input path="name" placeholder="Enter name ..." class="form-control"/>
+     <form:input path="uname" placeholder="Enter name ..." class="form-control"/>
      </div>
      
      <div class="form-group">
@@ -61,10 +61,12 @@
     <button type="submit" class="btn btn-lg btn-info" >Submit</button>
 						<button type="reset" class="btn btn-lg btn-info">Cancel</button>
      </div>
+    </form:form>
      </div>     
-     </div>
+     
   
-  </form:form>
+  
+   
    
   </div>
   

@@ -54,6 +54,9 @@ public class hibernateConfig
 	{	LocalSessionFactoryBuilder sb= new LocalSessionFactoryBuilder(datasource);
 	  sb.addProperties(gethiberProp());
 	  sb.addAnnotatedClass(User.class);
+	  sb.addAnnotatedClass(RegionCode.class);
+	  sb.addAnnotatedClass(Course.class);
+	  sb.addAnnotatedClass(BatchLaunchFitness.class);
 	 
 	  return sb.buildSessionFactory();
 	 	

@@ -54,7 +54,8 @@
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
         <a class="navbar-brand" href="#">Midas Touche</a>
-        <a class="btn btn-primary" href="#">Sign In</a>
+        <a class="btn btn-primary" href="${pageContext.request.contextPath}/register">Sign Up</a>
+       
       </div>
     </nav>
 
@@ -75,7 +76,7 @@
                   <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
                 </div>
                 <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Sign In!</button>
                 </div>
               </div>
             </form>
