@@ -55,6 +55,7 @@
       <div class="container">
         <a class="navbar-brand" href="#">Midas Touche</a>
         <a class="btn btn-primary" href="${pageContext.request.contextPath}/register">Sign Up</a>
+        <a class="btn btn-primary" href="${pageContext.request.contextPath}/fitness">Fitness Check</a>
        
       </div>
     </nav>
@@ -78,6 +79,7 @@
                 <div class="col-12 col-md-3">
                   <button type="submit" class="btn btn-block btn-lg btn-primary">Sign In!</button>
                 </div>
+              
               </div>
             </form>
           </div>

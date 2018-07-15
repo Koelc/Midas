@@ -27,9 +27,9 @@
             <div class="panel with-nav-tabs panel-primary">
                 <div class="panel-heading">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1primary" data-toggle="tab">Category</a></li>
-                            <li><a href="#tab2primary" data-toggle="tab">Supplier</a></li>
-                            <li><a href="#tab3primary" data-toggle="tab">Product</a></li>
+                            <li class="active"><a href="#tab1primary" data-toggle="tab">Region</a></li>
+                            <li><a href="#tab2primary" data-toggle="tab">Centre</a></li>
+                            <li><a href="#tab3primary" data-toggle="tab">Course</a></li>
                            
                         </ul>
                 </div>
@@ -65,8 +65,32 @@
                         </div>
                          <div class="tab-pane fade " id="tab3primary">
                         
-                         <form  method="post"  action="<c:url value="/admin/saveProduct" />" class="form-signin" enctype="multipart/form-data">
-                <span id="reauth-email" class="reauth-email"></span>
+                         <form  method="post"  action="<c:url value="/saveBatch" />" class="form-signin" enctype="multipart/form-data">
+                
+               
+               <div class="form-group">
+               <td> Select Region</td>
+               <td> <select class ="form-control" name="pCategory" required>
+                   <option value="">---Region---</option>
+                   <c:forEach items="${catList}" var="cate">
+                     <option value="${cate.cid }">${cate.name}</option></c:forEach></select></td>
+               </tr>
+              </div>
+               <div class="form-group">
+               <td> Select Centre</td>
+               <td> <select class ="form-control" name="pSupplier" required>
+                   <option value="">---Centre---</option>
+                   <c:forEach items="${satList}" var="sate">
+                     <option value="${sate.sid }">${sate.supplierName}</option></c:forEach></select></td>
+               </tr>
+                <div class="form-group">
+               <td> Select Course</td>
+               <td> <select class ="form-control" name="pSupplier" required>
+                   <option value="">---course---</option>
+                   <c:forEach items="${satList}" var="sate">
+                     <option value="${sate.sid }">${sate.supplierName}</option></c:forEach></select></td>
+               </tr>
+              <span id="reauth-email" class="reauth-email"></span>
                 <tr>
                <td  class="input_title">Product Name</td>
                <td> <input  type="text" name="pName"   required/></td>
@@ -89,36 +113,7 @@
                <td  class="input_title">Product Stock</td>
                <td> <input  type="text" name="pStock"   required/></td>
                 
-               </tr> 
-               
-               <div class="form-group">
-               <td> Select Category</td>
-               <td> <select class ="form-control" name="pCategory" required>
-                   <option value="">---Category---</option>
-                   <c:forEach items="${catList}" var="cate">
-                     <option value="${cate.cid }">${cate.name}</option></c:forEach></select></td>
-               </tr>
-              </div>
-               <div class="form-group">
-               <td> Select Supplier</td>
-               <td> <select class ="form-control" name="pSupplier" required>
-                   <option value="">---Supplier---</option>
-                   <c:forEach items="${satList}" var="sate">
-                     <option value="${sate.sid }">${sate.supplierName}</option></c:forEach></select></td>
-               </tr>
-              </div>
-            <br>
-            <tr>
-              <div class="fileinput fileinput-new" data-provides="fileinput">
-              
-              <tr>
-              <td>Image</td>
-              <td><input class="form-control" type="file" name="file" accept="image/*"><td>
-              </tr>
-              
-              </div> 
-               
-            </tr>              
+               </tr>             
               
                
                    <button class="btn btn-lg btn-primary" type="submit">Save</button>

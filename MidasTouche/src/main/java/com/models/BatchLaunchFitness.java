@@ -19,7 +19,9 @@ public class BatchLaunchFitness
 	//String CourseCd;
 	String CentreNm;
 	int batchStrength;
-	
+	String coursenm;
+	String centrnm;
+	String RegionCd;
 	/*@ManyToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="CourseCd")
     private Course course;// fields are in object form

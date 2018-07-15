@@ -19,6 +19,11 @@ public class indexController
 	{
 		return "index";
 	}
+	@RequestMapping("/fitness")
+	public String fitness()
+	{
+		return "fitnesscheck";
+	}
 
 	@RequestMapping(value="/register", method = RequestMethod.GET)
 	public ModelAndView showRegister()
